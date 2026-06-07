@@ -1,3 +1,4 @@
+# Intern Id: CITS2082
 # Natural_Language_Generator
 
 This project is a simple Natural Language Generator (NLG) developed using Python. It generates text based on patterns learned from training data using a basic Markov Chain approach. The application predicts the next word and creates meaningful sentences automatically.A Markov Chain is a mathematical model that predicts the next state or word based only on the current state or word. In this NLG project, the next word is chosen using the current word without considering earlier words.
