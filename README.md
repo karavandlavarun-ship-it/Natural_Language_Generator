@@ -1,83 +1,144 @@
-# Intern Id: CITS2082
-# Natural_Language_Generator
+## INTERN ID:CITS2082
+## Natural-Language-Generator
+Natural Language Generator (NLG) is an AI and NLP-based system that automatically creates meaningful human-readable text from existing data patterns. This project uses a Markov Chain approach to analyze word relationships and generate new sentences.
 
-This project is a simple Natural Language Generator (NLG) developed using Python. It generates text based on patterns learned from training data using a basic Markov Chain approach. The application predicts the next word and creates meaningful sentences automatically.A Markov Chain is a mathematical model that predicts the next state or word based only on the current state or word. In this NLG project, the next word is chosen using the current word without considering earlier words.
+## Project Description
+Natural Language Generator (NLG) is a Python-based application that automatically generates meaningful human-readable text using predefined training data and text generation techniques. This project applies basic Natural Language Processing (NLP) concepts to analyze word patterns and create new sentences.
 
-This helps generate sentences that follow the patterns learned from the training data.Features like beginner-friendly Python project uses Random Module and Markov Chain Algorithm Used Python requests library for Natural Language Generation Structure nlg-project/ │ ├── nlg.py ├── README.md └── requirements.txt Installation
+The system uses a Markov Chain model to understand relationships between words and predict the next word while generating text. It also includes an advanced version that can generate different types of content such as weather reports, sports updates, and news headlines.
 
-1.Clone the Repository git clone git clone https://github.com/your-username/nlg-project.git
+This project is designed to understand the fundamentals of text processing, probability-based prediction, and automated language generation using Python.
 
-2.Navigate to Project Folder cd nlg-project
+## Overview
+The Natural Language Generator creates new text automatically by learning patterns from existing sentences. It processes input text, builds a word relationship model, and produces new sentences based on the learned structure.
 
-3.Run the Project: python nlg.py
+## Features
+* Generate new text automatically from training data
+* Markov Chain based sentence generation
+* Randomized text output
+* Multiple text generation support
+* Weather report generation
+* Sports report generation
+* News headline generation
+* Save generated output into a file
+* Simple command-line interface
+* Beginner-friendly NLP implementation
+## Technologies Used
+* Python 3
+* Random Module
+* Natural Language Processing Concepts
+* Markov Chain Algorithm
+## Project Structure
+    Natural-Language-Generator/
+    │
+    ├── nlg.py
+    ├── advanced_nlg.py
+    ├── generated_text.txt
+    ├── README.md
+    └── requirements.txt
+## File Explanation
+nlg.py
+The basic Natural Language Generator.
 
-4.The program generates and displays text based on the number of texts specified by the user.
+It:
 
-# Natural Language Generation Details:
+* Uses training text data
+* Converts sentences into words
+* Creates word-to-word relationships
+* Generates new sentences using the Markov Chain model
+## advanced_nlg.py
+The advanced version provides different text generation options:
 
-Enter number of texts to generate: 3
+* Weather Report Generator
+* Sports Report Generator
+* News Generator
+* Output saving feature
+## Installation
+Clone the repository:
 
-=== Natural Language Generator ===
+    git clone YOUR_GITHUB_REPOSITORY_LINK
+Open the project folder:
 
-Generated Text 1: Ravi likes to play cricket with his friends after school.
+    cd Natural-Language-Generator
+Run the program:
 
-Generated Text 2: The weather was pleasant and everyone went for a walk.
+    python nlg.py
+or
 
-Generated Text 3: Students worked together to complete their science project.
+    python advanced_nlg.py
+## Sample Output
+    === Natural Language Generator ===
+    
+    Enter number of texts to generate: 3
+    
+    
+    Generated Text 1:
+    Ravi likes to play cricket with his friends after school.
+    
+    
+    Generated Text 2:
+    The weather was pleasant and everyone went for a walk.
+    
+    
+    Generated Text 3:
+    A little boy found a lost puppy near the market.
+    
+    
+    === Generation Complete ===
+## Advanced Generator Output
+    ===== Natural Language Generator =====
+    Available Categories:
+    1. weather
+    2. sports
+    3. news
+    
+    Enter category: sports
+    
+    Generated Text:
+    India won the match by 245 runs.
+    
+    Do you want to save the output? (yes/no): yes
+    
+    Output saved successfully in generated_text.txt
+## How It Works
+1. The program receives sample training text.
+2. The text is divided into individual words.
+3. Word relationships are stored using a dictionary.
+4. Random words are selected as starting points.
+5. New sentences are generated based on learned patterns.
+## Learning Outcomes
+* Understanding Natural Language Processing basics
+* Implementing Markov Chain text generation
+* Working with Python functions
+* Using lists and dictionaries
+* Applying randomization techniques
+* Learning text processing concepts
+## Future Enhancements
+* Integrate AI-based language models
+* Add graphical user interface (GUI)
+* Train using larger datasets
+* Add voice input and output
+* Generate complete articles and paragraphs
+## 👩‍💻 Author
+Yashasree Mada
 
-=== Generation Complete ===
+Python Developer | Software Development Enthusiast
 
-# Sample code:
-import random
+GitHub Profile:
+https://github.com/madayashasree05
 
-text = """ Ravi likes to play cricket with his friends after school.
+## 🤝 Support
+If you like this project, consider giving it a ⭐ on GitHub.
 
-Priya enjoys reading books in the library every evening.
+For any issues, suggestions, or improvements:
 
-The weather was pleasant and everyone went for a walk.
+* Open an issue in the GitHub repository
+* Share your feedback to help improve the project
+Thank you for visiting this project! 🚀
 
-A little boy found a lost puppy near the market.
+## 📄 License
+This project is licensed under the MIT License.
 
-The family planned a picnic by the river on Sunday.
+You are free to use, modify, and distribute this project for personal and educational purposes.
 
-Students worked together to complete their science project. """
-
-words = text.split()
-
-model = {}
-
-for i in range(len(words) - 1): current_word = words[i] next_word = words[i + 1]
-
-    if current_word not in model:
-        model[current_word] = []
-
-    model[current_word].append(next_word)
-def generate_text():
-
-    # Possible starting words
-    start_words = ["Ravi", "Priya", "The", "A", "Students"]
-
-    current_word = random.choice(start_words)
-    sentence = [current_word]
-
-    # Continue until a full stop is found
-    while not current_word.endswith("."):
-
-        if current_word in model:
-            current_word = random.choice(model[current_word])
-            sentence.append(current_word)
-        else:
-            break
-
-    return " ".join(sentence)
-print("=== Natural Language Generator ===")
-
-n = int(input("Enter number of texts to generate: "))
-
-for i in range(n): print(f"\nGenerated Text {i + 1}:") print(generate_text())
-
-print("\n=== Generation Complete ===")
-
-By completing this project, you will learn:
-
-The basics of Natural Language Generation (NLG), understand how the Markov Chain algorithm generates text, improve your Python programming skills, and gain a foundation in Natural Language Processing (NLP). You will also learn how to process text data and build simple AI-based applications. This project helps develop logical thinking and prepares you for more advanced NLP and chatbot projects.
+© 2026 Yashasree Mada
