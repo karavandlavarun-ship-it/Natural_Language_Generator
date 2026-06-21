@@ -120,7 +120,7 @@ or
 * Add voice input and output
 * Generate complete articles and paragraphs
 ## 👩‍💻 Author
-Yashasree Mada
+Karavandla Varun kumar
 
 Python Developer | Software Development Enthusiast
 
@@ -141,4 +141,4 @@ This project is licensed under the MIT License.
 
 You are free to use, modify, and distribute this project for personal and educational purposes.
 
-© 2026 Yashasree Mada
+© 2026 Karavandla Varun kumar
