@@ -1,0 +1,9 @@
+## Requirements
+
+- Python 3.x
+- No external dependencies required
+
+Install dependencies (if available):
+
+```bash
+pip install -r requirements.txt
