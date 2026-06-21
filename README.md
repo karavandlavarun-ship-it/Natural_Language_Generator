@@ -134,6 +134,7 @@ For any issues, suggestions, or improvements:
 
 * Open an issue in the GitHub repository
 * Share your feedback to help improve the project
+  
 Thank you for visiting this project! 🚀
 
 ## 📄 License
