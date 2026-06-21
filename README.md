@@ -125,7 +125,7 @@ Karavandla Varun kumar
 Python Developer | Software Development Enthusiast
 
 GitHub Profile:
-https://github.com/madayashasree05
+https://github.com/karavandlavarun-ship-it
 
 ## 🤝 Support
 If you like this project, consider giving it a ⭐ on GitHub.
